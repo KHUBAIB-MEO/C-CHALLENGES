@@ -14,7 +14,7 @@ int main()
     printf("Enter time period (in years): ");
     scanf("%f", &time);
 
-    compoundInterest = principal * (1 + rate / 100) * time;
+    compoundInterest = principal * (pow((1 + rate / 100), time));
 
     printf("Compound Interest: %.2f\n", compoundInterest);
 
