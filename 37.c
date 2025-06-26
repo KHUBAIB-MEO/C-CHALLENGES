@@ -7,7 +7,12 @@ int main()
     printf("Enter number: ");
     scanf("%d", &prime);
     int i = prime - 1;
-    if (prime == 1 || prime == 2)
+    if (prime == 1)
+    {
+        printf("%d is not a prime number\n", prime);
+        return 0;
+    }
+    else if (prime == 2)
     {
         printf("%d is a prime number\n", prime);
         return 0;
