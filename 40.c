@@ -5,17 +5,16 @@
 
 int main()
 {
-    int copy1, num, sum = 0, temp1, temp2, copy2, len = 0;
+    int copy1, num, sum = 0, temp1, copy2, len = 0;
     printf("Enter a number: ");
     scanf("%d", &num);
 
     copy1 = num;
     copy2 = num;
 
-    // find the lenght of a number
+    // find the length of a number
     while (copy2 > 0)
     {
-        temp2 = copy2 % 10;
         copy2 = copy2 / 10;
         len++;
     }
