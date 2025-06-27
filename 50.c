@@ -14,7 +14,3 @@ void greet()
 {
     printf("Hello World!");
 }
-
-void h()
-{
-}
