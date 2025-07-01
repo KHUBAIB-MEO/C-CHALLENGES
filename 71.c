@@ -9,7 +9,7 @@ void reverseArray(int arr[], int);
 int main()
 {
     int num;
-    printf("Enter how many number you want to add: ");
+    printf("Enter how many numbers you want to add: ");
     scanf("%d", &num);
     int arr[num];
 
@@ -18,6 +18,7 @@ int main()
     printArray(arr, num);
     printf("\nReverse array\n");
     reverseArray(arr, num);
+    printArray(arr, num);
     return 0;
 }
 
@@ -35,14 +36,16 @@ void printArray(int arr[], int num)
     printf("\n");
     for (int i = 0; i < num; i++)
     {
-        printf("%d|", arr[i]);
+        printf("%d ", arr[i]);
     }
 }
 void reverseArray(int arr[], int num)
 {
-    printf("\n");
-    for (int i = num - 1; i >= 0; i--)
+    int temp;
+    for (int i = 0; i < num / 2; i++)
     {
-        printf("%d|", arr[i]);
+        temp = arr[i];
+        arr[i] = arr[num - (i + 1)];
+        arr[num - (i + 1)] = temp;
     }
 }
