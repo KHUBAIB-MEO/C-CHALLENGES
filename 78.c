@@ -5,9 +5,9 @@
 
 int main()
 {
-    char text[200];
+    char text[100];
     printf("Enter text: ");
-    fgets(text, 200, stdin);
+    fgets(text, sizeof(text), stdin);
     puts(text);
     return 0;
 }
