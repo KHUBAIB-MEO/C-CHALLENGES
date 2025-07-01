@@ -18,7 +18,7 @@ int main()
     printf("Enter year: ");
     scanf("%d", &year);
 
-    printf("%s:%s:%d", day, month, year);
+    printf("%s:%s:%d\n", day, month, year);
     return 0;
 }
 
