@@ -21,7 +21,6 @@ int main()
     printf("%s", arr);
 
     free(arr);
-    arr = NULL;
     return 0;
 }
 
