@@ -25,7 +25,7 @@ int main()
 
     for (int i = 0; i < num; i++)
     {
-        printf("%d number is %.2f: \n", i + 1, arr[i]);
+        printf("%d number is %.2f\n", i + 1, arr[i]);
     }
 
     free(arr);
