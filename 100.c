@@ -36,5 +36,5 @@ int main()
 
     fclose(sum);
 
-    return 0;
+        return 0;
 }
