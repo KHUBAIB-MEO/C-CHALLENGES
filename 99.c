@@ -12,7 +12,7 @@ int main()
     printf("Enter filename: ");
     fgets(fileName, sizeof(fileName), stdin);
     removeNewLine(fileName);
-    sprintf(fullPath, "C:\\Users\\jawad\\OneDrive\\Desktop\\C programming challenges\\%s.txt", fileName);
+    sprintf(fullPath, "C:\\Users\\jawad\\OneDrive\\Desktop\\C programming challenges\\%s", fileName);
     FILE *pf = fopen(fullPath, "w");
     if (pf == NULL)
     {
