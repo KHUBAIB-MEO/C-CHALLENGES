@@ -8,7 +8,7 @@ void removeNewLine(char text[]);
 int main()
 {
     char string[100];
-    FILE *file = fopen("text.txt", "a");
+    FILE *file = fopen("text.txt", "W");
     if (file == NULL)
     {
         printf("File can't open\n");
